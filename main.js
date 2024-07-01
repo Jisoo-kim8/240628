@@ -28,7 +28,7 @@ user_input.addEventListener("focus",function(){user_input.value=""}) // user_inp
 
 function pickRandomNum(){
     computerNum = Math.floor(Math.random()*100) + 1
-    answer_area.textContent = `정답 : ${computerNum}`
+    answer_area.textContent = `정답(쓰앵님 전용) : ${computerNum}`
 }
 
 function play(){
@@ -67,11 +67,13 @@ function play(){
     play_button.disabled = true ;
  }
 }
-pickRandomNum()
 
 function reset(){ 
     user_input ="" //user input 창 깨끗하게 정리,
     pickRandomNum() // 새로운 번호 생성 
     result_area.textContent = "결과가 나온다"
 }
+
+
+pickRandomNum()
 
