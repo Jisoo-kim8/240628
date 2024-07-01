@@ -38,11 +38,11 @@ function play(){
        result_area.textContent="1과 100사이 숫자를 입력해 주세요!" 
        return; // 아래것들은 실행하지 않아요
     }
-    if(userValue.includes(userValue)){ // 배열에 이전값이 포함되어 있다면~ // 유효성 검사(2)
+    if(history.includes(userValue)){ // 배열에 이전값이 포함되어 있다면~ // 유효성 검사(2)
         result_area.textContent = "이미 입력한 숫자입니다. 다른 숫자를 입력해 주세요!"
         return;
     }
-    chances = chances-1; 
+    chances -- ;
     chances_area.textContent = `남은 기회 : ${chances}번` // 동적인 값을 넣을 때 쓰는 문법
 
  if(userValue < computerNum){
